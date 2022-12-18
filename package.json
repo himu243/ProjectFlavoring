@@ -1,0 +1,41 @@
+{
+  "name": "demoflavorfinal",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "ios:DevDebug": "npx react-native run-ios --scheme DEV --configuration DevDebug",
+    "ios:DevRelease": "npx react-native run-ios --scheme DEV --configuration DevRelease",
+    "ios:QaDebug": "npx react-native run-ios --scheme DEV --configuration QaDebug",
+    "ios:QaRelease": "npx react-native run-ios --scheme DEV --configuration QaRelease",
+    "android:DevDebug": "npx react-native run-android --variant devDebug --appIdSuffix=dev",
+    "android:DevRelease": "npx react-native run-android --variant devRelease --appIdSuffix=dev",
+    "android:QaDebug": "npx react-native run-android --variant qaDebug --appIdSuffix=qa",
+    "android:QaRelease": "npx react-native run-android --variant qaRelease --appIdSuffix=qa",
+    "android:assembleDev": "cd android && ./gradlew assembledevRelease && cd ..",
+    "android:assembleQa": "cd android && ./gradlew assembleqaRelease && cd .."
+  },
+  "dependencies": {
+    "react": "18.1.0",
+    "react-native": "0.70.6",
+    "react-native-config": "^1.4.11",
+    "react-native-device-info": "^10.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.32.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "0.72.3",
+    "react-test-renderer": "18.1.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
